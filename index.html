@@ -158,10 +158,10 @@
             <span class="size-details">( Creator of PyScript framework )</span>
             <div style="display: inline-flex;">
                 <div style="flex: 1; padding: 0 2px 0 0;">
-                    <a class="getstarted btn btn-primary btn-lg" href="https://dexie.org/docs/Tutorial/Getting-started" role="button">
+                    <a class="getstarted btn btn-primary btn-lg" href="/resume" role="button">
                         <!-- <span class="glyphicon glyphicon-flash"></span> -->
-                        <span class="widescreen">View Projects </span>
-                        <span class="slimscreen">View projects</span>
+                        <span class="widescreen">View Resume </span>
+                        <span class="slimscreen">View Resume</span>
                     </a>
                 </div>
                 <div style="flex: 1; padding: 0 2px 0 0;" class="widescreen">
@@ -181,7 +181,7 @@
                     <p>Experienced in NodeJS & ExpressJS</p>
                     <p>Database manager using SQL servers</p>
                 </div>
-                <p>Downlowd my Resume<span class="beta">CV</span><span style="display: inline-block; margin-left: -1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»</span></p>
+                <p onclick="location.href='/projects'">Project Catalog<span class="beta"></span>CV</span><span style="display: inline-block; margin-left: -1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»</span></p>
             </a>
         </div>
     </div>
@@ -192,80 +192,19 @@
                 <h2>Fast Service</h2>
                 <!-- <p>Unlike other devs, who like to waste time just to increase revenue. I prefer giving the project its optimum required time</p> -->
                 <p>I prefer giving the project its optimum required time. To produce the best product without wasting your time.</p>
-                <p><a class="btn btn-success" href="https://dexie.org/docs/Tutorial/" role="button">Contact me »</a></p>
+                <p><a class="btn btn-success" href="/contact" role="button">Contact me »</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Addictive Ux</h2>
                 <p>What makes a client impressed by your website? My websites possess amazing user interactive Ui, making them addicted to the creative experience.</p>
-                <p><a class="btn btn-success" href="https://dexie.org/docs/" role="button">Check them out »</a></p>
+                <p><a class="btn btn-success" href="/UI" role="button">Check them out »</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Performant Webapps</h2>
                 <p>My websapps not only look awesome. The functionality is highly performant (the part i mostly focus on). With regular updates and integration.</p>
-                <p><a class="btn btn-success" href="https://jsfiddle.net/dfahlander/xf2zrL4p" role="button">See them in action »</a></p>
+                <p><a class="btn btn-success" href="/apps" role="button">See them in action »</a></p>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <hr>
-    </div>
-    <!-- 
-    <div class="container">
-        <h2>Basic examples</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <pre class=" language-javascript"><code class=" language-javascript">
-	<span class="token comment">/*
-	|----------------------------|
-	| Declare your database      |
-	|----------------------------|
-	*/</span>
-
-	<span class="token keyword">const</span> db <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dexie</span><span class="token punctuation">(</span><span class="token string
-       ">'MyDatabase'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-	<span class="token comment">// Declare tables, IDs and indexes</span>
-	db<span class="token punctuation">.</span><span class="token function">version</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation
-       ">.</span><span class="token function">stores</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-		friends<span class="token operator">:</span> <span class="token string">'++id, name, age'</span>
-	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-
-
-
-
-
-					</code></pre>
-            </div>
-            <div class="col-md-6">
-                <pre class=" language-javascript"><code class=" language-javascript">
-	<span class="token comment">/*
-	|-----------------------|
-	| Then run some queries |
-	|-----------------------|
-	*/</span>
-
-	<span class="token comment">// Find some old friends</span>
-	<span class="token keyword">const</span> oldFriends <span class="token operator">=</span> <span class="token keyword">await</span> db<span class="token punctuation">.</span>friends
-		<span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token string">'age'</span><span class="token punctuation">)</span><span class="token punctuation
-       ">.</span><span class="token function">above</span><span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">)</span>
-		<span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-	<span class="token comment">// or make a new one</span>
-	<span class="token keyword">await</span> db<span class="token punctuation">.</span>friends<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-		name<span class="token operator">:</span> <span class="token string">'Camilla'</span><span class="token punctuation">,</span>
-		age<span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
-		street<span class="token operator">:</span> <span class="token string">'East 13:th Street'</span><span class="token punctuation">,</span>
-		picture<span class="token operator">:</span> <span class="token keyword">await</span> <span class="token function">getBlob</span><span class="token punctuation">(</span><span class="token string">'camilla.png'</span><span class="token punctuation">)</span>
-	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-								</code></pre>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="container">
-        <hr>
     </div>
 
     <div class="container" id="callouts">
@@ -320,6 +259,10 @@
     <script src="./assets/shoutouts.js"></script>
     <script>
         new Parallax(document.getElementById('parallax'));
+
+        ScrollReveal().reveal('.col-md-4, .col-md-12', {
+            reset: true,
+        })
     </script>
     <script>
         if (/disableAnalytics/i.test(location.search)) {
@@ -344,10 +287,6 @@
             ga('create', 'UA-7780680-5', 'auto');
             ga('send', 'pageview');
         }
-
-        ScrollReveal().reveal('.col-md-4, .col-md-12', {
-            reset: true,
-        })
     </script>
 
     <script async="" defer="" src="./assets/dexie.js"></script>
