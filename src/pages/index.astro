@@ -1,0 +1,40 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@/styles/stylesheet.css";
+import "@/styles/cursor.css";
+
+import Navbar from "@/components/navbar.astro";
+import Jumbotron from "@/components/jumbotron.astro";
+import Features from "@/components/features.astro";
+import Outro from "@/components/outro.astro";
+import Base from "@/layouts/index.astro";
+---
+
+<Base>
+  <Navbar />
+  <Jumbotron />
+  <Features />
+
+  <div class="container">
+    <hr />
+  </div>
+
+  <Outro />
+
+  <script>
+    // @ts-ignore
+    import Parallax from "parallax-js";
+    // @ts-ignore
+    import ScrollReveal from "scrollreveal";
+    import "bootstrap/dist/js/bootstrap.esm";
+    import "scrollreveal/dist/scrollreveal";
+    import "@/lib/buttons.js";
+
+    new Parallax(document.getElementById("parallax"));
+
+    ScrollReveal().reveal(".col-md-4, .col-md-12", {
+      reset: true,
+    });
+  </script>
+  <script src="@/lib/shoutouts.ts"></script>
+</Base>

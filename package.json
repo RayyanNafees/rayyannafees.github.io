@@ -1,0 +1,31 @@
+{
+  "name": "green-gravity",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "animejs": "^3.2.2",
+    "astro": "^4.10.2",
+    "bootstrap": "^5.3.3",
+    "dexie": "^4.0.7",
+    "jquery": "^3.7.1",
+    "parallax": "^0.0.0",
+    "parallax-js": "^3.1.0",
+    "scrollreveal": "^4.0.9",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.12",
+    "@types/jquery": "^3.5.30",
+    "@types/scrollreveal": "^0.0.11"
+  }
+}

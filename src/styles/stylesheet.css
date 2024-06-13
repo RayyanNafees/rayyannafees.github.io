@@ -3,7 +3,7 @@ body {
 /*	padding-top: 46px; */
 }
 
-/* This rule is needed to adjust in-page hash links to body padding-top:
+/* /* This rule is needed to adjust in-page hash links to body padding-top: */
 h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before, h6[id]::before { 
   display: block; 
   content: " "; 
@@ -11,22 +11,22 @@ h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before, 
   height: 66px; 
   visibility: hidden; 
   pointer-events: none;
-} */
+} 
 
 @media (min-width: 768px) {
-	/*body {
-		padding-top: 28px;
-	}*/
+	body {
+		padding-top: 38px;
+	}
 
 	/* This rule is needed to adjust in-page hash links to body padding-top: */
-	/*h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before, h6[id]::before { 
+	h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before, h6[id]::before { 
 		display: block; 
 		content: " "; 
 		margin-top: -48px;
 		height: 48px;
 		visibility: hidden; 
 		pointer-events: none;
-	}*/
+	}
 }
 
 
@@ -410,18 +410,16 @@ table tr:nth-child(2n) {
 
 @media (max-width: 767px) {
 	/* Remarkade för att måste lägga på klassen navbar-fixed-top eller vad den hette i detta fall */
-	/*body {
-		padding-top: 28px;
-	}*/
-	/* This rule is needed to adjust in-page hash links to body padding-top: 
-	h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before, h6[id]::before { 
+	body {
+		padding-top: 48px;
+	}h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before, h6[id]::before { 
 		display: block; 
 		content: " "; 
 		margin-top: -48px;
 		height: 48px;
 		visibility: hidden; 
 		pointer-events: none;
-	}	*/
+	}	
 }
 
 @media (min-width: 768px) {
@@ -445,11 +443,11 @@ table tr:nth-child(2n) {
 		padding-bottom: 4px;
 	}
 
-	/*.navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a,
 	.navbar-default .navbar-nav>.active>a:hover,
 	.navbar-default .navbar-nav>.active>a:focus {
 		background-color: rgba(115, 134, 243, 0.8);
-	}*/
+	}
 
 	.navbar-default .navbar-nav>li>a:hover,
 	.navbar-default .navbar-nav>li>a:focus,

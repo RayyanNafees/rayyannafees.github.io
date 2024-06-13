@@ -1,0 +1,62 @@
+---
+import Navlinks from "./navlinks.astro";
+---
+
+<nav class="navbar navbar-default" style="z-index: 10;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false"
+      >
+        <span class="sr-only text-red-500">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand"href="/"style="background-image: url( '/assets/dexie-logo-icon-menu-dark-bkgimg.svg'); background-repeat: no-repeat; background-position: 7px 8px;">Dexie.js</a> -->
+      <a class="navbar-brand" href="https://github.com/RayyanNafees"
+        ><img
+          src="/assets/dexie-logo-icon-menu-dark-img.svg"
+          class="dexie-logo-icon-menu"
+        />Rayyan</a
+      >
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <Navlinks />
+    <!-- /.navbar-collapse -->
+
+    <div id="offline-switch" title="Make this site available offline" class="">
+      <span id="offlineOffHeading">Offline mode</span>
+      <span id="offlineOnHeading">Available offline</span>
+      <label class="switch">
+        <input id="offline-checkbox" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<script>
+  import { setOffline, updateSwitchFromStorage } from "@/lib/offline-switch";
+  const offlineCheck = document.getElementById(
+    "offline-checkbox"
+  ) as HTMLInputElement;
+  offlineCheck.addEventListener("input", () => {
+    setOffline(offlineCheck.checked);
+  });
+
+  updateSwitchFromStorage();
+  document.querySelectorAll("nav.navbar ul>li>a").forEach(function (a) {
+    const href = a.getAttribute("href")?.split("#")[0];
+    if (href && location.pathname === href) {
+      console.log("Selected:", a.getAttribute("href"));
+      (a.closest("li") as HTMLLIElement).className += " active";
+    }
+  });
+</script>
