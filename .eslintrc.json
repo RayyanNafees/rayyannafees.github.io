@@ -1,0 +1,6 @@
+{
+  "extends": "next/core-web-vitals",
+  "ignorePatterns":[
+    "@next/next/no-img-element"
+  ]
+}
