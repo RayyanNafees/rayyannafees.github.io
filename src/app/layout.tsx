@@ -5,11 +5,11 @@ import { Layout } from "@/components/Layout";
 import "@/styles/tailwind.css";
 export const metadata: Metadata = {
 	title: {
-		template: "%s - Spencer Sharp",
+		template: "%s - Rayyan Nafees",
 		default:
-			"Spencer Sharp - Software designer, founder, and amateur astronaut",
+			"Rayyan Nafees - Software designer, founder, and amateur astronaut",
 	},
-	description: `I'm Spencer, a software designer and entrepreneur based in New York City. I'm the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.`,
+	description: `I'm Rayyan, a software designer and entrepreneur based in New York City. I'm the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.`,
 	metadataBase: new URL("https://rayyannafees.githun.io"), // Replace with your actual domain
 
 };
