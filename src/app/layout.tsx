@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 
 import { Providers } from "@/app/providers";
 import { Layout } from "@/components/Layout";
-
 import "@/styles/tailwind.css";
-
 export const metadata: Metadata = {
 	title: {
 		template: "%s - Spencer Sharp",
@@ -21,15 +19,19 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
+	const fullUrl = process.env.NODE_ENV === "development" ? 'https://localhost:3000' : 'https://rayyannafees.githun.io'
 	return (
 		<html lang="en" className="h-full antialiased" suppressHydrationWarning>
-			<body className="flex h-full bg-zinc-50 dark:bg-black">
+			<head>
+				<script defer src="https://unpkg.com/alpinejs"></script>
+			</head>
+			{fullUrl?.includes('keystatic') ? <body>{children}</body> : <body className="flex h-full bg-zinc-50 dark:bg-black" >
 				<Providers>
 					<div className="flex w-full">
 						<Layout>{children}</Layout>
 					</div>
 				</Providers>
-			</body>
-		</html>
+			</body>}
+		</html >
 	);
 }

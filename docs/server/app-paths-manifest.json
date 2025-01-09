@@ -1,0 +1,4 @@
+{
+  "/page": "app/page.js",
+  "/keystatic/[[...params]]/page": "app/keystatic/[[...params]]/page.js"
+}
