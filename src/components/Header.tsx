@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 'use client'
-import Image from 'next/image'
 
 import { Fragment, useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
@@ -248,15 +247,14 @@ function Avatar({
       {...props}
     >
       <Image
-        src={avatarImage.src}
+        src={avatarImage}
         alt=""
-       
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
           large ? 'h-16 w-16' : 'h-9 w-9',
         )}
-        loading="lazy"
+        priority
         unoptimized
       />
     </Link>

@@ -5,14 +5,15 @@ export const article = {
   date: '2022-09-02',
   title: 'Introducing Animaginary: High performance web animations',
   description:
-    `When you're building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.`,
+    'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
 }
 
 export const metadata = {
   title: article.title,
   description: article.description,
 }
-export default (props) => <ArticleLayout article={article} {...props}  />
+
+export default (props) => <ArticleLayout article={article} {...props} />
 
 When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.
 
