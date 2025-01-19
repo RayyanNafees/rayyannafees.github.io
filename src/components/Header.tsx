@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
+import Image from 'next/image'
 
 import { Fragment, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
@@ -246,15 +247,17 @@ function Avatar({
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >
-      <img
+      <Image
         src={avatarImage.src}
         alt=""
+       
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
           large ? 'h-16 w-16' : 'h-9 w-9',
         )}
         loading="lazy"
+        unoptimized
       />
     </Link>
   )

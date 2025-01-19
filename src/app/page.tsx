@@ -1,6 +1,7 @@
 import type { ImageProps } from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
+import Image from 'next/image'
 
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -159,7 +160,7 @@ function Role({ role }: { role: Role }) {
 	return (
 		<li className="flex gap-4">
 			<div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-				<img src={role.logo.toString()} alt="" className="h-7 w-7" />
+				<Image src={role.logo.toString()} alt="" className="h-7 w-7" unoptimized/>
 			</div>
 			<dl className="flex flex-auto flex-wrap gap-x-2">
 				<dt className="sr-only">Company</dt>
@@ -258,7 +259,8 @@ function Photos() {
 							rotations[imageIndex % rotations.length],
 						)}
 					>
-						<img
+						<Image
+						unoptimized
 							src={image.src}
 							alt=""
 							sizes="(min-width: 640px) 18rem, 11rem"
