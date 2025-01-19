@@ -1,4 +1,4 @@
-import assert from 'assert'
+import assert from 'node:assert'
 import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
