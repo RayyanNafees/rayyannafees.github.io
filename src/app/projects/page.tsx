@@ -11,38 +11,45 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'VersoView',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'AI driven Content engagement platform for modulating content to user provided formats.',
+    link: { href: 'http://versoview.com', label: 'versoview.com' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'SMEST',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'India\'s SMart invESTment (SMEST) platform for investing in Stocks & Crypto Currency all in one place with AI recommendations.',
+    link: { href: 'http://smest.in', label: 'smest.in' },
+    logo: logoPlanetaria,
+  },
+  {
+    name: 'SNP DMS',
+    description:
+      'Cargo management application for US-based ports.',
+    link: { href: 'https://decomans.com', label: 'decomans.com' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'INSEE Cements',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'Cement bulk order platform for connecting cement manufacturers to vendors throughout Sri Lanka.',
+    link: { href: 'https://siamcitycement.com', label: 'siamcitycement.com' },
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'Watchcloud',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      'Hong Kong based eCommerce platform for selling wacthes for Cloudflog.',
+    link: { href: 'https://cloudflog.com', label: 'cloudflog.com' },
     logo: logoCosmos,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Moneycome',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'Local Freelance service platform based in Hong Kong.',
+    link: { href: 'https://moneycomeasia.com', label: 'moneycomeasia.com' },
     logo: logoOpenShuttle,
   },
 ]
