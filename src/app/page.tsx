@@ -11,10 +11,12 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoOrangeMantra from '@/images/logos/orangemantra.png'
+import logoUnboxInnovations from '@/images/logos/unboxinnovations.jpg'
+import logoCodeCube from '@/images/logos/codecube.png'
+import logoNinthNode from '@/images/logos/theninthnode.svg'
+import logoHelioStream from '@/images/logos/helio-stream.svg'
+
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -187,35 +189,42 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   const resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Ninth Node',
+      title: 'Fullstack Developer',
+      logo: logoNinthNode,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Premier Enterprises',
+      title: 'Frontend Developer',
+      logo: logoHelioStream,
+      start: '2023',
+      end: '2024',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Unbox Innovations',
+      title: 'Fullstack Developer',
+      logo: logoUnboxInnovations,
+      start: '2021',
+      end: '2022',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Orange Mantra',
+      title: 'Mobile App Developer',
+      logo: logoOrangeMantra,
+      start: '2020',
+      end: '2021',
+    },
+    {
+      company: 'Code Cube',
+      title: 'Backend Developer',
+      logo: logoCodeCube,
+      start: '2018',
+      end: '2020',
     },
   ]
 
@@ -230,7 +239,7 @@ function Resume() {
           <Role key={role.title} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://ryancv.tiiny.site" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -273,22 +282,21 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Web Developer, Blockchain Enthusiast, and GameDev Hobbyist.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Rayyan, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Rayyan, a software designer based in India. 
+            Also the lead of MyAMU club where we build softwares to enhance
+            the student life at Aligarh Muslim University, India.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/NafeesRayyan"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com"
+              href="https://instagram.com/_r_nh2"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
@@ -298,7 +306,7 @@ export default async function Home() {
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/rayyan-nafees"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
@@ -309,9 +317,9 @@ export default async function Home() {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {articles.map((article) => (
+            {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
