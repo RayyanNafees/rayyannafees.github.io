@@ -7,50 +7,62 @@ import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-
+import logoVersoView from '@/images/logos/versoview.png'
+import logoSMEST from '@/images/logos/smest.png'
+import logoSNP from '@/images/logos/decomans.png'
+import logoINSEE from '@/images/logos/insee.png'
+import logoWatchCloud from '@/images/logos/cloudflog.png'
+import logoMoneyCome from '@/images/logos/moneycome.png'
+import logoDecorlay from '@/images/logos/decorlay.png'
 const projects = [
+  {
+    name: 'Decorlay',
+    description:
+      'An eCommerce store for household items operated in India.',
+    link: { href: 'http://decorlay.com', label: 'decorlay.com' },
+    logo: logoDecorlay,
+  },
   {
     name: 'VersoView',
     description:
       'AI driven Content engagement platform for modulating content to user provided formats.',
     link: { href: 'http://versoview.com', label: 'versoview.com' },
-    logo: logoPlanetaria,
+    logo: logoVersoView,
   },
   {
     name: 'SMEST',
     description:
       'India\'s SMart invESTment (SMEST) platform for investing in Stocks & Crypto Currency all in one place with AI recommendations.',
     link: { href: 'http://smest.in', label: 'smest.in' },
-    logo: logoPlanetaria,
+    logo: logoSMEST,
   },
   {
     name: 'SNP DMS',
     description:
       'Cargo management application for US-based ports.',
     link: { href: 'https://decomans.com', label: 'decomans.com' },
-    logo: logoAnimaginary,
+    logo: logoSNP,
   },
   {
     name: 'INSEE Cements',
     description:
       'Cement bulk order platform for connecting cement manufacturers to vendors throughout Sri Lanka.',
     link: { href: 'https://siamcitycement.com', label: 'siamcitycement.com' },
-    logo: logoHelioStream,
+    logo: logoINSEE,
   },
   {
     name: 'Watchcloud',
     description:
       'Hong Kong based eCommerce platform for selling wacthes for Cloudflog.',
     link: { href: 'https://cloudflog.com', label: 'cloudflog.com' },
-    logo: logoCosmos,
+    logo: logoWatchCloud,
   },
   {
     name: 'Moneycome',
     description:
       'Local Freelance service platform based in Hong Kong.',
-    link: { href: 'https://moneycomeasia.com', label: 'moneycomeasia.com' },
-    logo: logoOpenShuttle,
+    link: { href: 'https://moneycome.in', label: 'moneycome.in' },
+    logo: logoMoneyCome,
   },
 ]
 
