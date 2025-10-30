@@ -189,14 +189,21 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   const resume: Array<Role> = [
     {
-      company: 'Ninth Node',
-      title: 'Fullstack Developer',
+      company: 'NeoMetaventures',
+      title: 'AI Developer Lead',
       logo: logoNinthNode,
-      start: '2024',
+      start: '2025',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
+    },
+    {
+       company: 'Ninth Node',
+      title: 'Fullstack Developer',
+      logo: logoNinthNode,
+      start: '2024',
+      end: '2025',
     },
     {
       company: 'Premier Enterprises',
@@ -239,7 +246,7 @@ function Resume() {
           <Role key={role.title} role={role} />
         ))}
       </ol>
-      <Button href="https://ryancv.tiiny.site" variant="secondary" className="group mt-6 w-full">
+      <Button href="/cvpdf" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
