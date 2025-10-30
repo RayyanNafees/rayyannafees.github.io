@@ -12,6 +12,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import logoOrangeMantra from '@/images/logos/orangemantra.png'
+import logoNeoMetaventures from '@/images/logos/neometaventures.png'
 import logoUnboxInnovations from '@/images/logos/unboxinnovations.jpg'
 import logoCodeCube from '@/images/logos/codecube.png'
 import logoNinthNode from '@/images/logos/theninthnode.svg'
@@ -191,7 +192,7 @@ function Resume() {
     {
       company: 'NeoMetaventures',
       title: 'AI Developer Lead',
-      logo: logoNinthNode,
+      logo: logoNeoMetaventures,
       start: '2025',
       end: {
         label: 'Present',
@@ -246,8 +247,8 @@ function Resume() {
           <Role key={role.title} role={role} />
         ))}
       </ol>
-      <Button href="/cvpdf" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button href="/cv.pdf" variant="secondary" className="group mt-6 w-full">
+        View Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
